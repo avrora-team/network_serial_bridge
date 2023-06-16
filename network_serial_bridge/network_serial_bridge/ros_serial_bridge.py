@@ -19,7 +19,7 @@ class SerialBridgeNode(Node):
     
     self.data_subscriber = self.create_subscription(
       ByteArray,
-      '/serial_input',
+      '/input_topic',
       self.data_callback,
       10)
   
