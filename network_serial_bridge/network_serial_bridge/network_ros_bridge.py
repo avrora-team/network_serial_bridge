@@ -8,7 +8,7 @@ from network_serial_bridge_msgs.msg import ByteArray
 class NetworkBridgeNode(Node):
 
   def __init__(self):
-    super().__init__('serial_bridge')
+    super().__init__('network_bridge')
     
     self.data_publisher = self.create_publisher(ByteArray, '/output_topic', 10)
     
