@@ -24,8 +24,6 @@ class SerialBridgeNode(Node):
       10)
   
   def data_callback(self, msg):
-    #print(msg.data)
-    #print(bytearray(msg.data))
     self.serial.write(msg.data)
 
 def main(args=None):
