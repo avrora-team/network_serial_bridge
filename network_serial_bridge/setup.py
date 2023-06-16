@@ -22,7 +22,6 @@ setup(
         'console_scripts': [
             'ros_serial_bridge = network_serial_bridge.ros_serial_bridge:main',
             'network_ros_bridge = network_serial_bridge.network_ros_bridge:main'
-            
         ],
     },
 )

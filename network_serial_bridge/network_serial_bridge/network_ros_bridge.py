@@ -10,10 +10,10 @@ class NetworkBridgeNode(Node):
   def __init__(self):
     super().__init__('serial_bridge')
     
-    self.data_publisher = self.create_publisher(ByteArray, '/serial_input', 10)
+    self.data_publisher = self.create_publisher(ByteArray, '/output_topic', 10)
     
-    self.declare_parameter('address', '192.168.0.7')
-    self.declare_parameter('port', 26)
+    self.declare_parameter('address', '127.0.0.1')
+    self.declare_parameter('port', 1234)
     
     host = self.get_parameter('address').get_parameter_value().string_value
     port = self.get_parameter('port').get_parameter_value().integer_value
