@@ -8,6 +8,7 @@
   <license>0BSD</license>
 
   <exec_depend>rclpy</exec_depend>
+  <depend>mavros_msgs</depend>
   <exec_depend>network_serial_bridge_msgs</exec_depend>
 
   <test_depend>ament_copyright</test_depend>

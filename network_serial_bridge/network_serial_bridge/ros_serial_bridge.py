@@ -18,7 +18,7 @@ class SerialBridgeNode(Node):
     self.serial = serial.Serial(serial_port_name, serial_baud_rate)
     
     self.data_subscriber = self.create_subscription(
-      ByteArray,
+      mavros_msgs_RTCM,
       '/input_topic',
       self.data_callback,
       10)
