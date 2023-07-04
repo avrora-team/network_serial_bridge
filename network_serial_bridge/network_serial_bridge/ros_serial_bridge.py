@@ -3,6 +3,7 @@ import serial
 
 from rclpy.node import Node
 from network_serial_bridge_msgs.msg import ByteArray
+from mavros_msgs.msg import RTCM as mavros_msgs_RTCM
 
 class SerialBridgeNode(Node):
 
